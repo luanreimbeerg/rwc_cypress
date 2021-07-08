@@ -5,5 +5,10 @@
         "email": "agilizeii@gmail.com",
         "password": "12345678"
     },
-    "apiUrl": "https://conduit.productionready.io/api/"
+    "apiUrl": "https://conduit.productionready.io/api/",
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "cypress/reports/junit-[hash].xml"
+    
+    }
 }
