@@ -25,3 +25,11 @@ steps:
 - script: npm run cy:run:chrome
   displayName: 'Run teste on chorome'
   continueOnError: true
+
+- task: PublishTestResults@2
+  displayName: 'exibindo resultados dos teste'
+  inputs:
+    testResultsFiles: '**/junit*.xml'
+    mergeTestResults: true
+    testRunTitle: 'Agilizei Bootcamp'
+  continueOnError: true
