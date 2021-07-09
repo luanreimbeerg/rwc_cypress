@@ -1,12 +1,9 @@
 /// <reference types="cypress"/>
 
 import articles from '../support/pages/articles'
-import Routes from '../support/routes'
 
 context('Publicação', () => {
     beforeEach(() => {
-        
-
         //Preparação
         cy.backgroudLogin();
         articles.acessarFormulario();
@@ -16,8 +13,7 @@ context('Publicação', () => {
         articles.preencherFormulario();
         articles.submeterPublicacao();
         // Verificação
-        articles.verificarSePublicacaoFoiCriadaComSucesso()
-        
+        articles.verificarSePublicacaoFoiCriadaComSucesso() 
     });
 });
 

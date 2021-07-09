@@ -20,15 +20,10 @@ class Articles {
     }
 
     submeterPublicacao(){
-       
-        
         cy.get(el.buttonSubmit).click();
-
     }
 
     verificarSePublicacaoFoiCriadaComSucesso(){
-        
-
         cy.wait(`@${Routes.as.postArticles}`).then((postArticlesResponse) => {
             expect(postArticlesResponse.status).to.eq(200)
         })
@@ -38,14 +33,7 @@ class Articles {
        cy.wait(`@${Routes.as.getArticlesTitleComments}`).then((postArticlesResponse) => {
            expect(postArticlesResponse.status).to.eq(200)
         })
-
     }
 }
 
 export default new Articles();
-
-// POST 200 /api/articles
-// (xhr)
-// GET 200 /api/articles/agilizei-title-gaohld
-// (xhr)
-// GET 200 /api/articles/agilizei-title-gaohld/comments

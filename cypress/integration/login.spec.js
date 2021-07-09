@@ -9,5 +9,6 @@ context('Login',{browser: '!firefox'}, () => {
         login.submeterFormulario();
 
         //verificação
+        login.verificarLogin();
     });
 });
