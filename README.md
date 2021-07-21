@@ -13,4 +13,4 @@
 - Rodando teste na Pipeline
 - Multobrowser 
 
-![Alt text](https://www.screencast.com/t/ss99ye9chXw "Imagem pipeline")
+![Alt text](/teste_pipeline.png "Imagem pipeline")
